@@ -1,0 +1,30 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block head %}
+    {{super()}}
+    <title>{% block title %}Mi primer app Flask {% endblock %} </title>
+{% endblock %}
+
+{% block body %}
+    
+    {% block navbar %}
+        {% include 'navbar.html'%}
+
+    {% endblock %}
+
+
+
+    {% block content %}
+        <h1>Mi primer app flask </h1>
+        <p>
+           Este es el contenido...
+        </p>
+    {% endblock %} 
+
+    {% block flooter %}
+        {% include 'flooter.html'%}
+
+    {% endblock %}
+
+{% endblock %}
+

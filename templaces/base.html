@@ -1,5 +1,6 @@
 {% extends 'bootstrap/base.html' %}
 
+
 {% block head %}
     {{super()}}
     <title>{% block title %}Mi primer app Flask {% endblock %} </title>
@@ -9,10 +10,7 @@
     
     {% block navbar %}
         {% include 'navbar.html'%}
-
     {% endblock %}
-
-
 
     {% block content %}
         <h1>Mi primer app flask </h1>
@@ -21,9 +19,12 @@
         </p>
     {% endblock %} 
 
+    {% block div %}<!-- agregando div -->
+        {% include 'div.html' %}
+    {% endblock %}
+
     {% block flooter %}
         {% include 'flooter.html'%}
-
     {% endblock %}
 
 {% endblock %}

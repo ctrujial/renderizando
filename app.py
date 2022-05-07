@@ -12,9 +12,6 @@ items = 'Tenis','zapatillas'#para que se renderice
 def pageNoEncontrada(e):
     return render_template('404.html',e=e),404
 
-
-
-
 @app.route('/index')
 def index():
     ip_usuario = request.remote_addr
@@ -32,7 +29,5 @@ def informacion():
     #return 'la ip es: {}'.format(ip_usuario)
     return render_template("informacion.html", **context)#fallando al momento de redireccionar 
     
-
-
 
 app.run(debug=True)

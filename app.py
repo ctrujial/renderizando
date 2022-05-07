@@ -1,6 +1,6 @@
-from ensurepip import bootstrap
 from flask import Flask,redirect,request,make_response,render_template, url_for
 from flask_bootstrap import Bootstrap
+
 
 
 app = Flask(__name__,template_folder="templaces")

@@ -2,11 +2,10 @@ from flask import Flask,redirect,request,make_response,render_template, url_for
 from flask_bootstrap import Bootstrap
 
 
-
 app = Flask(__name__,template_folder="templaces")
 bootstrap = Bootstrap(app)
 
-items = 'Tenis','zapatillas'#para que se renderice
+items = 'items1','items2', 'madre mia!!','d'#para que se renderice
 
 @app.errorhandler(404)
 def pageNoEncontrada(e):
@@ -15,7 +14,7 @@ def pageNoEncontrada(e):
 @app.route('/index')
 def index():
     ip_usuario = request.remote_addr
-    response = make_response(redirect('/informacion'))
+    response = make_response(redirect('/informacion', 'index.css'))
     response.set_cookie('ip_usuario', ip_usuario)
     return  response
 

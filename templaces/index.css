@@ -1,14 +1,16 @@
-/* div{
-    color: aqua;
+p[name^="2"]{
+    font-size: small;
 }
-
-p{
-    color: aquamarine;
+a[name^="3"]{
+    color: rgb(114, 137, 223) ;
 }
-
-h2{
-    color: antiquewhite;
+a[name^="4"]{
+    color: rgb(182, 182, 234);
+    text-decoration: red;
 }
-.name{
-    color: rgb(16, 74, 126);
-} */
+a[name^="5"]{
+    color: rgb(227, 151, 10);
+}
+h4{
+    font-size: 18px;
+}
